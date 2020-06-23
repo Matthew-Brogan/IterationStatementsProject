@@ -11,7 +11,8 @@ namespace IterationStatements
 
             //Create a List called "numbers"
             //Create a variable of type int with an initializer of 0
-
+            List<int> numbers = new List<int>() {1, 2 , 3 ,4 ,5 , 6 ,7 , 8  };
+            int i = 0;
 
 
             // Create a do-while loop
@@ -21,21 +22,35 @@ namespace IterationStatements
             }
             // While your variable is less than 100
 
+            do
+            {
+                i++;
+                numbers.Add(i);
+            } while (i < 100);
 
-
+            
             // Create a while loop
             // While your variable is less than 200
             {
                 // Increment your variable by 1
                 // Then add your variable to "numbers"
             }
+            while (i < 200)
+            {
+                i++;
+                numbers.Add(i);
+            }
 
             Console.WriteLine("Increase:");
 
             // Create a foreach loop
             // Write your variable to the console
+            foreach(int num in numbers)
+            {
+                i++;
+            }
 
-            Console.WriteLine("");
+            Console.WriteLine($"{i}");
             Console.WriteLine("Decrease:");
 
             // Create a for loop
@@ -45,6 +60,11 @@ namespace IterationStatements
             // Decrement i by 1
             {
                 // Write to the console "numbers" at index i
+            }
+            for(int j = 199; j <= numbers.Count && j >= 0; j--)
+            {
+                
+                Console.WriteLine(numbers[j]);
             }
         }
     }
