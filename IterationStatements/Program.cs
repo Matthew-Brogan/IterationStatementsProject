@@ -47,10 +47,10 @@ namespace IterationStatements
             // Write your variable to the console
             foreach(int num in numbers)
             {
-                i++;
+                Console.WriteLine(num);
             }
 
-            Console.WriteLine($"{i}");
+            Console.WriteLine("");
             Console.WriteLine("Decrease:");
 
             // Create a for loop
